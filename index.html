@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Marqies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to The Marqies Hotel</h1>
+  </header>
+
+  <main>
+    <!-- Button for Event Handling -->
+    <button id="special-offer-btn">View special offers</button>
+
+    <!-- Image Gallery -->
+    <section id="gallery">
+      <h2>Our Facilities</h2>
+      <div class="slideshow">
+        <img id="gallery-img" src="room1.jpg" alt="Room 1"> <br>
+        <button class="btn" id="prev-btn">Previous</button>
+        <button class="btn" id="next-btn">Next</button>
+      </div>
+    </section>
+
+    <!-- Tabs for Interactive Content -->
+    <section id="tabs">
+      <h2>Hotel Features</h2>
+      <div class="tab-buttons">
+        <button class="tab-btn" data-tab="1" >Pool</button>
+        <button class="tab-btn" data-tab="2">Spa</button>
+        <button class="tab-btn" data-tab="3">Gym</button>
+      </div>
+      <div class="tab-content" id="tab-1">Moved to our extranet website. </div>
+      <div class="tab-content" id="tab-2" style="display: none;">Coming soon...</div>
+      <div class="tab-content" id="tab-3" style="display: none;">Under maintainance...</div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking-form">
+      <h2>Book Your Stay</h2>
+      <form id="hotel-form" method="post" action="mailto:opiyobrian2017@gmail.com" enctype="text/plain">
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" required>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="John Doe" required>
+        <span class="error" id="name-error"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="john@domain.co" required>
+        <span class="error" id="email-error"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="password" required>
+        <span class="error" id="password-error"></span>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+    <footer>
+    <p>&copy; 2025 The Marqies Hotel. All rights reserved.</p>
+    <p>Follow us on:<br><br>
+      <a href="https://facebook.com">Facebook</a> |
+      <a href="https://twitter.com">Twitter</a> |
+      <a href="https://instagram.com">Instagram</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
